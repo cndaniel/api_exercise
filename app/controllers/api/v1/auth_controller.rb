@@ -11,9 +11,10 @@ class Api::V1::AuthController < ApiController
     else
       render json: {
         message: ' Failed',
-        errors: user.errors,
-        status: 400
-      }
+        errors: user.errors
+
+      },
+             status: 400
     end
   end
 
@@ -31,7 +32,7 @@ class Api::V1::AuthController < ApiController
     else
       render json: {
         message: 'Email or password is not correct'
-      }
+      }, status: 401
     end
   end
 
