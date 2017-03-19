@@ -1,24 +1,14 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## api client
+* use rest-client gem to grape juhe weather api
+update temperate and get city lists
+* use environment variables to protect api key.
+## api server
 
-Things you may want to cover:
+ * a train ticket reservation system
+ * json api
+ * user signin signup and authentications
+ * user avatar
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+ ## Jbuilder refacotoring  
