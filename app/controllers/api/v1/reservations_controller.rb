@@ -30,6 +30,13 @@ class Api::V1::ReservationsController < ApiController
     render json: { message: '更新成功' }
   end
 
+  def destroy
+    @reservation = Reservation.find_by_booking_code!(params[:booking_code])
+    @reservation.destroy
+
+    render json: { message: '已取消定位' }
+  end
+
   private
 
   def set_up_reservation
