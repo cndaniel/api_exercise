@@ -5,6 +5,7 @@ class Reservation < ApplicationRecord
 
   belongs_to :train
 
+  belongs_to :user
   before_validation :generate_booking_code, on: :create
 
   def generate_booking_code
