@@ -29,7 +29,7 @@ class Api::V1::ReservationsController < ApiController
         reservation_url: api_v1_reservation_url(@reservation.booking_code)
       }
     else
-      render json:{ message:" reservation failure", error: @reservation.errors, status: 400}
+      render json:{ message:" reservation failure", error: @reservation.errors }, stauts:400
     end
   end
 
